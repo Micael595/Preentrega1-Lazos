@@ -1,15 +1,29 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
+<html>
+  <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
+    <title>Tienda de Hamburguesas</title>
+    <link rel="stylesheet" href="./estilos.css">
+  </head>
+  <h1 style="color: #ff0000 ;background-color: rgb(248, 190, 42); margin: 0px;border: 0px solid darkblue;display: flex;justify-content: center;  width: 100%;
+  padding: 20px;flex-direction: column;" >Bienvenido a la tienda de hamburguesas</h1>
+  <body style="color: #a600ffcc;background-color: #ffcc00ec;">
 
-
-    <script src="./app.js"></script>
-</body>
+    <div id="menu">
+      <h2 style="color: #ff0000; border-color:black;">Menú</h2>
+      <ul>
+        <!-- Aquí se mostrarán las opciones del menú dinámicamente utilizando JavaScript -->
+      </ul>
+    </div>
+    <div id="carrito">
+      <h2>Carrito de compras</h2>
+      <ul>
+        <!-- Aquí se mostrarán los elementos del carrito de compras dinámicamente utilizando JavaScript -->
+      </ul>
+      <p>Total: <span id="total"></span></p>
+      <button id="vaciar-carrito">Vaciar carrito</button>
+      <button id="boton-comprar">Comprar</button>
+    </div>
+    <script src="script.js"></script>
+  </body>
 </html>
