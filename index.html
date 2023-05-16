@@ -5,15 +5,15 @@
     <title>Tienda de Hamburguesas</title>
     <link rel="stylesheet" href="./estilos.css">
   </head>
-  <h1 style="color: #ff0000 ;background-color: rgb(248, 190, 42); margin: 0px;border: 0px solid darkblue;display: flex;justify-content: center;  width: 100%;
-  padding: 20px;flex-direction: column;" >Bienvenido a la tienda de hamburguesas</h1>
   <body style="color: #a600ffcc;background-color: #ffcc00ec;">
-
+      <div>
+        <h1 style="color: #ff0000; border-color:black;">BIENVENIDOS A MCBURGER!</h1>
+      </div>
     <div id="menu">
       <h2 style="color: #ff0000; border-color:black;">Menú</h2>
-      <ul>
+      <div class="menu-grid">
         <!-- Aquí se mostrarán las opciones del menú dinámicamente utilizando JavaScript -->
-      </ul>
+      </div>
     </div>
     <div id="carrito">
       <h2>Carrito de compras</h2>
@@ -24,6 +24,11 @@
       <button id="vaciar-carrito">Vaciar carrito</button>
       <button id="boton-comprar">Comprar</button>
     </div>
+    <div>
+      <p>Hora: <span id="hora"></span></p>
+      <p>Fecha: <span id="fecha"></span></p>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
     <script src="script.js"></script>
   </body>
 </html>
